@@ -1,0 +1,200 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+    min-height: 100vh; 
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url(images/homebackground.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+nav{
+    display: flex; 
+    padding: 2% 6%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1; 
+    text-align: right; 
+}
+.nav-links ul li{
+    list-style: none; 
+    display: inline-block; 
+    padding: 8px 12px; 
+    position: relative; 
+}
+.nav-links ul li a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 16; 
+}
+.nav-links ul li::after {
+    content: ''; 
+    width: 0%; 
+    height: 3px; 
+    background:rgb(250, 82, 4);
+    display: block; 
+    margin: auto; 
+    transition: 0.5s; 
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.text-box
+{
+    width: 90%; 
+    color: #fff; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px; 
+    color: #fff; 
+    font-size: 20px; 
+}
+
+.signup-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff; 
+    padding: 12px 34px; 
+    font-size: 17px; 
+    background: transparent; 
+    position: relative; 
+    cursor: pointer;
+}
+
+.signup-btn:hover{
+    border: 1px solid rgb(250, 82, 4); 
+    background:rgb(250, 82, 4);
+    transition: 1s; 
+}
+
+/* ------------------------------------------------- About Us -------------------------------------------*/
+
+.about-us{
+    width: 80%; 
+    margin: auto; 
+    text-align: center; 
+    padding-top: 100px; 
+    padding-bottom: 75px;
+}
+
+.about-title{
+    font-size: 26px; 
+    font-weight: 600; 
+    color:rgba(0, 0, 0); 
+}
+
+.about-description{
+    color: rgb(51, 51, 51); 
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px; 
+
+}
+.row-about{
+    margin-top: 5%; 
+    display: flex; 
+    justify-content: space-between; 
+}
+.about-col{
+    flex-basis: 32%;
+    border-radius: 7px; 
+    margin-bottom: 30px; 
+    position: relative; 
+    overflow: hidden; 
+}
+.about-col img{
+    width: 100%; 
+}
+.layer{
+    background: transparent; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transition: 0.5s; 
+    color: transparent; 
+
+}
+.layer:hover{
+    background: rgba(250, 114, 2, 0.664); 
+    color:rgb(0, 0, 0); 
+    font-size: 36px;
+}
+
+/* ----------------------------------------- instructions ------------------------------------*/ 
+
+.instructions{
+    margin: auto; 
+    text-align: center; 
+    padding-top: 75px; 
+    padding-bottom: 75px;
+    background-color: rgba(250, 114, 2, 0.664);
+}
+
+.join-title{
+    color: #414141d3; 
+}
+
+.join-description{
+    margin-bottom: 50px; 
+    color: #414141d3; 
+}
+
+.row-instructions{
+    width: 80%;
+    display: flex; 
+    padding-left: 10%;
+    justify-content: space-between; 
+}
+.instructions-col{
+    flex-basis: 28%; 
+    color: #fff; 
+    background: #414141d3; 
+    border-radius: 5px; 
+    margin-bottom: 2%; 
+    margin-right: 1px; 
+    margin-left: 1px;
+    padding: 20px 12px; 
+    box-sizing: border-box; 
+}
+
+/* ----------------------------------------- Footer ------------------------------------*/ 
+.footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff; 
+    text-align: center;
+}
+
+.icons img{
+    width: 60px; 
+    justify-content: space-between; 
+    padding-inline: 10px;
+}
+
+hr{
+    color: #fff; 
+}

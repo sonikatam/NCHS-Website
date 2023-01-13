@@ -1,0 +1,152 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*------------------------------ Header ------------------------------*/
+
+.header{
+    min-height: 10vh; 
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url(images/homebackground.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+nav{
+    display: flex; 
+    padding: 2% 6%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1; 
+    text-align: right; 
+}
+.nav-links ul li{
+    list-style: none; 
+    display: inline-block; 
+    padding: 8px 12px; 
+    position: relative; 
+}
+.nav-links ul li a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 16; 
+}
+.nav-links ul li::after {
+    content: ''; 
+    width: 0%; 
+    height: 3px; 
+    background:rgb(250, 82, 4);
+    display: block; 
+    margin: auto; 
+    transition: 0.5s; 
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+/*------------------------------ Footer ------------------------------*/
+.about-us{
+    width: 80%; 
+    margin: auto; 
+    text-align: center; 
+    padding-top: 75px; 
+    padding-bottom: 0px;
+}
+
+.second-row{
+    padding-bottom: 0px;
+    width: 80%; 
+    margin: auto; 
+    text-align: center; 
+}
+
+.about-title{
+    font-size: 26px; 
+    font-weight: 600; 
+    color:rgba(0, 0, 0); 
+}
+
+.about-description{
+    color: rgb(51, 51, 51); 
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px; 
+
+}
+.row-about{
+    margin-top: 5%; 
+    display: flex; 
+    justify-content: space-between; 
+}
+.about-col{
+    flex-basis: 32%;
+    border-radius: 7px; 
+    margin-bottom: 1px; 
+    position: relative; 
+    overflow: hidden; 
+}
+.about-col img{
+    width: 100%; 
+}
+.layer{
+    background: transparent; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transition: 0.5s; 
+    color: transparent; 
+
+}
+.layer:hover{
+    background: rgba(250, 114, 2, 0.664); 
+    color:rgb(0, 0, 0); 
+    font-size: 36px;
+}
+
+.signup-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(8, 8, 8); 
+    padding: 12px 34px; 
+    font-size: 17px; 
+    background: transparent; 
+    position: relative; 
+    cursor: pointer;
+}
+
+.signup-btn:hover{
+    border: 1px solid rgb(250, 82, 4); 
+    background:rgb(250, 82, 4);
+    transition: 1s; 
+}
+/*------------------------------ Footer ------------------------------*/
+.footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff; 
+    text-align: center;
+}
+
+.icons img{
+    width: 60px; 
+    justify-content: space-between; 
+    padding-inline: 10px;
+}
+
+hr{
+    color: #fff; 
+}
